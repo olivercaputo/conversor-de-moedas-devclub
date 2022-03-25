@@ -16,7 +16,7 @@ const convertValues = async () => {
     const euro = data.EURBRL.high
     const bitcoin = data.BTCBRL.high
 
-    console.log(data)
+    
 
     realValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
@@ -38,8 +38,15 @@ const convertValues = async () => {
     }
     
     if (select.value === "₿ Bitcoin") {
-        currencyValueText.innerHTML = (inputReais / bitcoin).toFixed (7)
+        currencyValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BTC",
+        }).format(inputReais / bitcoin)
     }
+
+    //if (select.value === "₿ Bitcoin") {
+    //    currencyValueText.innerHTML = (inputReais / bitcoin).toFixed (7)
+    //}
 }
 
 changeCurrency = () => {
