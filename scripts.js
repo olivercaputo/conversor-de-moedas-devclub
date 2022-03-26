@@ -41,6 +41,7 @@ const convertValues = async () => {
             currency: "BTC", minimumFractionDigits: 8,
         }).format(inputReais / bitcoin)
     }
+
     // 1.000 Reais = 0.00471000
 
     // th-TH currency THB
