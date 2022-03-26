@@ -14,11 +14,8 @@ const convertValues = async () => {
 
     const dolar = data.USDBRL.high
     const euro = data.EURBRL.high
-    const bitcoin = data.BTCBRL.high
-
-    
-    // 1.000 Reais = 0.00471000
-        
+    const bitcoin = (data.BTCBRL.high) /.0010
+            
     realValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL",
@@ -39,15 +36,27 @@ const convertValues = async () => {
     }
     
     if (select.value === "₿ Bitcoin") {
+        currencyValueText.innerHTML = new Intl.NumberFormat('de-DE', {
+            style: "currency",
+            currency: "BTC", minimumFractionDigits: 8,
+        }).format(inputReais / bitcoin)
+    }
+    // 1.000 Reais = 0.00471000
+
+    // th-TH currency THB
+
+
+    /*  ***como estava antes***
+    
+    if (select.value === "₿ Bitcoin") {
         currencyValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
             style: "currency",
             currency: "BTC",
         }).format(inputReais / bitcoin)
     }
+    
+    */
 
-    //if (select.value === "₿ Bitcoin") {
-    //    currencyValueText.innerHTML = (inputReais / bitcoin).toFixed (7)
-    //}
 }
 
 changeCurrency = () => {
