@@ -39,10 +39,20 @@
                 </select>
             </label>
 
+            <!--<div class="form-group col-md-4">
+                <label>Moeda / Dinheiro</label>
+                <input type="text" class="form-control" onkeypress="$(this).mask('R$ #.##0,00', {reverse: true});">
+            </div> -->
+
             <label>
                 Valor:
                 <input id="input-real" placeholder="R$ 10.000,00">
             </label>
+
+            <!-- <label>
+                Valor:
+                <input id="input-real" placeholder="R$ 10.000,00" type="text" class="form-control" onkeypress="$(this).mask('R$ #.##0,00', {reverse: true});">
+            </label>-->
 
             <button id="convert-button" type="button">Converter</button>
 
