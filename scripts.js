@@ -14,12 +14,11 @@ const convertValues = async () => {
 
     const dolar = data.USDBRL.high
     const euro = data.EURBRL.high
-    const bitcoin = (data.BTCBRL.high) / .0010
+    const bitcoin = data.BTCBRL.high
+
+    
     // 1.000 Reais = 0.00471000
-    const profits = 2489.8237356
-
-    //profits.toFixed(3) // Returns 2489.824 (rounds up)
-
+        
     realValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL",
@@ -40,7 +39,7 @@ const convertValues = async () => {
     }
     
     if (select.value === "₿ Bitcoin") {
-        currencyValueText.innerHTML = new Intl.NumberFormat("de-DE", {
+        currencyValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
             style: "currency",
             currency: "BTC",
         }).format(inputReais / bitcoin)
