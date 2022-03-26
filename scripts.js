@@ -46,18 +46,6 @@ const convertValues = async () => {
 
     // th-TH currency THB
 
-
-    /*  ***como estava antes***
-    
-    if (select.value === "₿ Bitcoin") {
-        currencyValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
-            style: "currency",
-            currency: "BTC",
-        }).format(inputReais / bitcoin)
-    }
-    
-    */
-
 }
 
 changeCurrency = () => {
