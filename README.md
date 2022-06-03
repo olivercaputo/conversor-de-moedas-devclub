@@ -39,7 +39,7 @@
 
 <h4>O projeto está disponível no GitHub-Pages, pode ser utilizado por qualquer pessoa com um dispositivo com acesso a Internet pelo link abaixo.</h4>
 
-<a>https://olivercaputo.github.io/Conversor-de-Moedas---DevClub/</a>
+<a>https://olivercaputo.github.io/conversor-de-moedas-devclub/</a>
 
 <h4>Para ter acesso a todo o projeto, basta ter um computador ligado à Internet e uma conta no GitHub para visualizar.</h4>
 
