@@ -2,7 +2,7 @@
 
 <h3>Conversor de Moedas - DevClub.</h3>
 
-<img src="./img/Login-photo.jpg" alt="interface-conversor-de-moedas"/>
+<img align="center" src="./assets/template-readme.jpg" alt="interface-conversor-de-moedas"/>
 
 <h2>📝 Descrição do Projeto:</h2>
 
